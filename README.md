@@ -1,6 +1,9 @@
 # IncomeTAXGPT
 This project is part of a hackathon called Start-a-thon and is meant to be a ChatGPT like tool specifically for Indian tax.
 
+## Technicalities:
+This project makes use of Pinecone VectorDB to store the taxation data in the form of embeddings. The LLM is then connected with the VectorDB which handlles the logic of similarity search of the embeddings present in the DB with the embeddings obtained from converting the posted question to required format.
+
 How to run:
 
 1. Download all dependencies listed in requirements.txt and models/requirements.txt
