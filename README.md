@@ -15,3 +15,10 @@ How to run:
 4. Run embedder.py with your own API keys and index name
 
 5. Run app.py with your own API keys and index name
+
+## Screenshots:
+
+![image](https://github.com/NitinReddy-dev/IncomeTAXGPT/assets/114919978/a0666954-e1e2-4949-badd-217f3058db0f)
+
+![image](https://github.com/NitinReddy-dev/IncomeTAXGPT/assets/114919978/867cc00d-a045-4de5-9736-a81ee5c4d4de)
+
