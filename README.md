@@ -23,12 +23,12 @@ IndianTaxGPT aims to revolutionize the way the common man in India understands t
 - **Natural Language Processing (NLP)**: Leveraging NLP techniques to process and understand textual data related to Indian tax laws and procedures.
 - **GPT-powered Models**: Utilizing GPT-powered models to provide accurate and comprehensive information to users.[Llama 2-7b V]
 - **Embeddings Vector Search Database**: Implementing embeddings vector search databases to enable efficient data retrieval and processing.[Huggingface Embeddings Transformer and Pinecone Vector DB]
-- **Langchain (LLM)**: Incorporating Langchain models for language understanding and processing tasks.
-- **Deployment**: Developing a user-friendly web interface for seamless interaction with the platform using Streamlit.
+- **Langchain (LLM)**: Incorporating Langchain interface various components.
+- **Deployment**: Developing a user-friendly web interface using Streamlit.
 
 ## Technical Overview
 
-This project utilizes Pinecone VectorDB to store taxation data in the form of embeddings. The Langchain Language Model (LLM), specifically llama-2, is integrated with VectorDB to handle the logic of similarity search. It compares the embeddings present in the database with the embeddings obtained from converting the user's question into the required format.
+This project utilizes Pinecone VectorDB to store taxation data in the form of embeddings. The Large Language Model (LLM), specifically llama-2, is integrated with VectorDB to handle the logic of similarity search. It compares the embeddings present in the database with the embeddings obtained from converting the user's question into the required format.
 
 ## Getting Started
 
