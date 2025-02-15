@@ -105,10 +105,4 @@ We’re on a mission to simplify taxes in India. Your contributions—whether th
 
 ---
 
-## 🛡️ License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 **💡 Together, let’s make tax compliance smarter and simpler!**
