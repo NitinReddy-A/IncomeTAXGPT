@@ -241,7 +241,7 @@ These matter, and being upfront about them is part of making the tool trustworth
 
 ## Background
 
-IndianTaxGPT started in 2023 as a hackathon prototype exploring whether open-source models could
+IndianTaxGPT started in 2023 as a hackathon prototype (Start-a-thon 2023 RVITM) exploring whether open-source models could
 make Indian tax law easier to navigate without paid APIs. It has since been rebuilt as a
 maintained project. The rebuild added a modular package, current LangChain and Pinecone APIs,
 source citations, idempotent ingestion, a streaming chat UI, tests and CI.
