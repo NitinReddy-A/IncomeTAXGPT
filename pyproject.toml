@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "indiantaxgpt"
+dynamic = ["version"]
+description = "Ask questions about Indian income tax and get answers grounded in, and cited from, the source documents. Runs on a local Llama 2 model."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.46",
+    "langchain-core>=1.0",
+    "langchain-text-splitters>=1.0",
+    "langchain-huggingface>=1.0",
+    "langchain-pinecone>=0.2.13",
+    "pinecone>=7.0",
+    "sentence-transformers>=3.0",
+    "ctransformers>=0.2.27",
+    "pypdf>=5.0",
+    "huggingface-hub>=0.25",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+indiantaxgpt-ingest = "indiantaxgpt.ingest:main"
+indiantaxgpt-download-model = "indiantaxgpt.download_model:main"
+
+[project.urls]
+Repository = "https://github.com/NitinReddy-A/IncomeTAXGPT"
+
+[tool.setuptools.dynamic]
+version = { attr = "indiantaxgpt.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["indiantaxgpt*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

@@ -1,4 +1,2 @@
-pinecone-client
-langchain==0.0.225
-ctransformers==0.2.5
-sentence-transformers==2.2.2
+# Dependencies are declared in pyproject.toml; this installs the project and all of them.
+-e .
